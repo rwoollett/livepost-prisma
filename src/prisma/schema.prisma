@@ -9,14 +9,13 @@ datasource db {
 
 model Post {
   id      Int      @id @default(autoincrement())
-  userId  Int      @default(1)
   date    DateTime @default(now())
   title   String   @default("")
   content String   @default("")
   user    String   @default("")
-  thumbsUp        Int     @default(1)
-  hooray          Int     @default(1)
-  heart           Int     @default(1)
-  rocket          Int     @default(1)
-  eyes            Int     @default(1)
+  thumbsUp        Int     @default(0)
+  hooray          Int     @default(0)
+  heart           Int     @default(0)
+  rocket          Int     @default(0)
+  eyes            Int     @default(0)
 }
