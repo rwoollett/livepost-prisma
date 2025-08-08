@@ -18,7 +18,7 @@ it('it create a new post', async () => {
   //   "nodeName": "Orange"
   // });
 
-  expect('hello').toMatchInlineSnapshot();
+  expect('hello').toMatchInlineSnapshot(`"hello"`);
 
 
 });

@@ -4,12 +4,12 @@ import { PrismaClient } from "@prisma/client";
   const prismaTest = new PrismaClient({
     datasources: {
       db: {
-        url: process.env.DATABASE_TEST_URL
+        url: process.env.DATABASE_URL
       }
     }
   });
   await prismaTest.$executeRaw`
-  TRUNCATE TABLE "Game" RESTART IDENTITY CASCADE;
+  TRUNCATE TABLE "Post" RESTART IDENTITY CASCADE;
   `;
   
   prismaTest.$disconnect();

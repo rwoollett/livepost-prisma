@@ -1,0 +1,16 @@
+-- CreateTable
+CREATE TABLE "Post" (
+    "id" SERIAL NOT NULL,
+    "userId" INTEGER NOT NULL DEFAULT 1,
+    "date" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "title" TEXT NOT NULL DEFAULT '',
+    "content" TEXT NOT NULL DEFAULT '',
+    "user" TEXT NOT NULL DEFAULT '',
+    "thumbsUp" INTEGER NOT NULL DEFAULT 1,
+    "hooray" INTEGER NOT NULL DEFAULT 1,
+    "heart" INTEGER NOT NULL DEFAULT 1,
+    "rocket" INTEGER NOT NULL DEFAULT 1,
+    "eyes" INTEGER NOT NULL DEFAULT 1,
+
+    CONSTRAINT "Post_pkey" PRIMARY KEY ("id")
+);
