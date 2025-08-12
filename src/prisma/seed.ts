@@ -9,7 +9,7 @@ import { PrismaClient } from "@prisma/client";
     }
   });
   await prismaTest.$executeRaw`
-  TRUNCATE TABLE "Post" RESTART IDENTITY CASCADE;
+  TRUNCATE TABLE "Posts" RESTART IDENTITY CASCADE;
   `;
   
   prismaTest.$disconnect();
