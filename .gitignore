@@ -27,6 +27,7 @@ tmp.html
 .DS_Store
 .env.local
 .env.port
+.env.db
 .env.development.local
 .env.test.local
 .env.production.local
