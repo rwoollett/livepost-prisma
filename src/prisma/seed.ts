@@ -11,6 +11,9 @@ import { PrismaClient } from "@prisma/client";
   await prismaTest.$executeRaw`
   TRUNCATE TABLE "Posts" RESTART IDENTITY CASCADE;
   `;
+  await prismaTest.$executeRaw`
+  TRUNCATE TABLE "Users" RESTART IDENTITY CASCADE;
+  `;
   
   prismaTest.$disconnect();
 
