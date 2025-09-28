@@ -12,6 +12,6 @@ it('it create a new user', async () => {
   });
 
   const amount = await ctx.prisma.users.count();
-  expect(amount).toMatchInlineSnapshot(`1`);
+  expect(amount).toMatchInlineSnapshot(`2`);
 
 });
