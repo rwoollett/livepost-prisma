@@ -19,6 +19,7 @@ import { PrismaClient } from "@prisma/client";
   INSERT INTO "Users" ("authId", "name") VALUES ('temp@test.co.nz', 'Temp (NetProc) at Test co nz');
   `;
 
+  // Sample Post
   await prismaTest.$executeRaw`
   INSERT INTO "Posts" ("title", "content", "userId", "date") VALUES ('Some tough spiders are thought of simply as figs', 'Their bird was, in this moment, a silly bear. They were lost without the amicable kiwi that composed their fox. A peach is an amicable crocodile. A tidy fox without sharks is truly a scorpion of willing cats. Shouting with happiness, a currant is a wise currant!', 1, NOW());
   `;

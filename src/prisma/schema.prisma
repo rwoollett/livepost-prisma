@@ -11,6 +11,7 @@ model Posts {
   id        Int      @id @default(autoincrement())
   date      DateTime @default(now())
   title     String   @default("")
+  slug      String?  @unique()
   content   String   @default("")
   thumbsUp  Int      @default(0)
   hooray    Int      @default(0)
