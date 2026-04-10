@@ -1,9 +1,8 @@
-// import bodyParser from 'body-parser';
-// import cors from 'cors';
 import cookieSession from 'cookie-session';
 import express from 'express';
 import dotenv from 'dotenv';
 import { createServer } from 'http';
+import "dotenv/config";
 
 // Load environment variables from .env file
 dotenv.config();
