@@ -16,7 +16,7 @@ import { PrismaClient } from "@prisma/client";
   `;
 
   await prismaTest.$executeRaw`
-  INSERT INTO "Users" ("authId", "name") VALUES ('temp@test.co.nz', 'Temp (NetProc) at Test co nz');
+  INSERT INTO "Users" ("authUserEmail", "name") VALUES ('temp@test.co.nz', 'Temp (NetProc) at Test co nz');
   `;
 
   // // Sample Post
