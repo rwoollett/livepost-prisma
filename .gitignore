@@ -12,6 +12,7 @@ api.http
 gol.env
 compose.env
 set_env.sh
+/scratch
 
 # testing
 tmp.html
