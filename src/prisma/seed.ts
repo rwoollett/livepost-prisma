@@ -15,9 +15,9 @@ import { PrismaClient } from "@prisma/client";
   TRUNCATE TABLE "Users" RESTART IDENTITY CASCADE;
   `;
 
-  await prismaTest.$executeRaw`
-  INSERT INTO "Users" ("authUserEmail", "name") VALUES ('temp@test.co.nz', 'Temp (NetProc) at Test co nz');
-  `;
+  // await prismaTest.$executeRaw`
+  // INSERT INTO "Users" ("authUserEmail", "name") VALUES ('temp@test.co.nz', 'Temp (NetProc) at Test co nz');
+  // `;
 
   // // Sample Post
   // await prismaTest.$executeRaw`

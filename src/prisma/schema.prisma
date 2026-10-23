@@ -37,6 +37,7 @@ model Posts {
 model Users {
   id             Int     @id @default(autoincrement())
   authUserEmail  String  @unique()
+  authUserId     String  @unique()
   name           String  @default("")
   posts          Posts[]
 }
