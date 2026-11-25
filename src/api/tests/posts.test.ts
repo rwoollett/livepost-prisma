@@ -6,12 +6,13 @@ it('it create a new user', async () => {
 
   await ctx.prisma.users.create({
     data: {
-      authId: "test@test.co.nz",
+      authUserEmail: "test@test.co.nz",
+      authUserId: "womseetig",
       name: "Test user at Test company"
     }
   });
 
   const amount = await ctx.prisma.users.count();
-  expect(amount).toMatchInlineSnapshot(`2`);
+  expect(amount).toMatchInlineSnapshot(`1`);
 
 });
